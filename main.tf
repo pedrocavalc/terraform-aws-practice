@@ -16,8 +16,8 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami           = "ami-03f65b8614a860c29"
   instance_type = "t2.micro"
-  key_name = "iac-alura"
+  key_name = "alura"
   tags = {
-    Name = "Primeira instancia"
+    Name = "Terraform Ansible Python"
   }
-}
+  }
